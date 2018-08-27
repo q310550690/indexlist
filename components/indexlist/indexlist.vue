@@ -81,7 +81,7 @@
 				that.listv = that.cull(that.list);
 				that.lists = that.list;
 			}else{
-				that.listv = that.list;
+				that.listv = that.objKeySort(that.list);
 				that.lists = that.uncull(that.list);
 			}
 		},
@@ -172,10 +172,25 @@
 			inerto(e){
 				this.toIndex = this.index[e];
 			},
+			//排序的函数
+            objKeySort(arys){ 
+                //先用Object内置类的keys方法获取要排序对象的属性名，再利用Array原型上的sort方法对获取的属性名进行排序，newkey是一个数组
+				let newkey = Object.keys(arys).sort();
+                let newObj = {}; //创建一个新的对象，用于存放排好序的键值对
+                for(var i = 0; i < newkey.length; i++) {
+                    //遍历newkey数组
+                    newObj[newkey[i]] = arys[newkey[i]];
+                    //向新创建的对象中按照排好的顺序依次增加键值对
+				}
+                return newObj; //返回排好序的新对象
+            },
 			// 按字段名分类数据
 			cull(d){
 				let that = this;
 				let map = {};
+				if(d.length <= 0){
+					return false
+				}
 				d.forEach((v,i) => {
 					let first = v[that.py].substring(0,1).toUpperCase()
 					if(!map[first]){
@@ -186,7 +201,7 @@
 						map[first].push(v)
 					}
 				});
-				return map
+				return that.objKeySort(map)
 			},
 			// 把按字段分类的还原成普通数据
 			uncull(d){
@@ -223,7 +238,7 @@
 					that.listv = that.cull(n)
 					that.lists = n;
 				}else{
-					that.listv = n;
+					that.listv = that.objKeySort(n);
 					that.lists = that.uncull(n);
 				}
 			}

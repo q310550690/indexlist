@@ -19,6 +19,13 @@
 		data() {
 			return {
 				data0: {
+					B: [{
+						name: '版本',
+						pinyin: 'bb'
+					}, {
+						name: '爸爸',
+						pinyin: 'bb'
+					}],
 					A: [{
 						name: '啊啊',
 						pinyin: 'aa'
@@ -26,21 +33,14 @@
 						name: '啊啊a啊',
 						pinyin: 'aaaa'
 					}],
-					B: [{
-						name: '版本',
-						pinyin: 'bb'
-					}, {
-						name: '爸爸',
-						pinyin: 'bb'
-					}]
 				},
-				data1: [{
-					name: '啊啊啊',
-					pinyin: 'AAA'
-				}, {
+				data1: [, {
 					name: '版本',
 					pinyin: 'bb'
-				}, {
+				},{
+					name: '啊啊啊',
+					pinyin: 'AAA'
+				},{
 					name: '阿尔法',
 					pinyin: 'aef'
 				}, {
