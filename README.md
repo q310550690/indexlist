@@ -65,3 +65,9 @@ hide()
 // methods:{hideIndexList(e){this.$refs.indexlist.hide();}
 // 
 ``` 
+
+## 截图
+[![PqRWGD.png](https://s1.ax1x.com/2018/08/27/PqRWGD.png)](https://imgchr.com/i/PqRWGD)
+[![PqRhxH.png](https://s1.ax1x.com/2018/08/27/PqRhxH.png)](https://imgchr.com/i/PqRhxH)
+[![PqRfRe.png](https://s1.ax1x.com/2018/08/27/PqRfRe.png)](https://imgchr.com/i/PqRfRe)
+[![PqRRPO.png](https://s1.ax1x.com/2018/08/27/PqRRPO.png)](https://imgchr.com/i/PqRRPO)
