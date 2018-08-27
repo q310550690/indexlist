@@ -59,16 +59,10 @@
 }
 .indexlist-c-b .c-b-text {
   padding-left: 20rpx;
-  padding-right: 20rpx;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-  height: 60rpx;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
+  padding-right: 40rpx;
+  padding-bottom: 15rpx;
+  padding-top: 15rpx;
+  width: auto;
   font-size: 30rpx;
   color: #4b4e4d;
   line-height: 1;
