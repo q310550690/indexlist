@@ -1,5 +1,5 @@
 <template xlang="wxml" minapp="mpvue">
-	<view class="indexlist" v-if="indexlistshow">
+	<view class="indexlist" v-if="indexlistshow" @touchmove.stop="">
 		<view class="indexlist-m" :class="{indexlistfadein:indexlistshow,indexlistfadeout:indexlisthide}"></view>
 		<view class="indexlist-c" :class="{indexlistshow:indexlistshow,indexlisthide:indexlisthide}">
 			<view class="header">
